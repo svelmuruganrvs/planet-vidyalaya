@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+    <title>{{ name }}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <link rel="shortcut icon" href="{{ link }}/favicon.ico">
+    <link rel="alternate" type="application/atom+xml" title="{{ name }} Atom 1.0" href="{{ link }}/atom.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ name }} RSS 2.0" href="{{ link }}/rss20.xml">
+
+    <link rel="stylesheet" href="media/css/index.css" type="text/css" media="all">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="media/js/jquery_lazyload.js"></script>
+
+    <script type="text/javascript">
+        $(function(){ $('.post img').lazyload({effect : "fadeIn"})
+                    });
+    </script>
+</head>
+
+<body>
+
+<div id="page">
+
+    <div id="header">
+
+        <!-- Google CSE Search Box Begins -->
+        <div id="search">
+            <form id="searchbox_007525575524326405779:c0gv0y410u0"
+                  action="http://www.google.com/cse">
+            <input name="cx" value="007525575524326405779:c0gv0y410u0" type="hidden">
+            <input style="background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;)
+            no-repeat scroll left center rgb(255, 255, 255);" name="q" size="15"
+            type="text">
+        </div> <!-- /search -->
+        <!-- Google CSE Search Box Ends -->
+
+        <div id="masthead">
+            <a href="{{ link }}" title="Home" rel="home">
+                <img src="media/images/logo.png" alt="Home" id="site-logo" height="64" width="64">
+            </a>
+
+            <div id="site-title">
+                <p id="site-name">
+                    <a href="{{ link }}" title="Home" rel="home"> {{ name }} </a>
+                </p>
+                <p id="site-slogan">
+                    Blogs by the students and staff of <a href="http://rmv.ac.in" style="color:#000"> Ramakrishna Mission Vidyalaya </a>
+                </p>
+            </div> <!-- /site-title -->
+
+            <a id="footer-link" href="http://link-to-google-form.com">Add your Blog to this planet</a>
+        </div> <!-- /masthead -->
+
+    </div> <!-- /header -->
+
+    <div id="content">
+
+        {% for item in Items %}
+
+            {% ifchanged item.date %}
+                <h2 class="date"> {{ item.date }} </h2>
+            {% endifchanged %}
+
+            <div class="entry">
+
+                <div class="person-info">
+                    <a href="{{ item.channel_id }}" title="{{ item.channel_author }}">
+                        {% if item.channel_avatar %}
+                            <img class="face" src="{{ item.channel_avatar }}" width=70px height=70px alt="">
+                        {% else %}
+                            <img class="face" src="media/images/nobody.png" alt="">
+                        {% endif %}
+                        <br>
+                        {{ item.channel_author }} ({{ item.channel_register_number }})
+                    </a>
+                </div>
+
+                <div class="post">
+
+                    <div class="post-header">
+                        <h3 class="post-title">
+                            <a href="{{ item.link }}">
+                                {% if item.title %}
+                                    {{ item.title }}
+                                {% else %}
+                                    No Title
+                                {% endif %}
+                            </a>
+                        </h3>
+                    </div> <!-- /post-header -->
+
+                    <div class="post-contents ">
+                        {% autoescape off %}
+                            {{ item.content }}
+                        {% endautoescape %}
+                    </div> <!-- /post-contents -->
+
+                    <div class="post-footer">
+                        <p>
+                            <a href="{{ item.link }}"> Published on {{ item.date }} </a>
+                            <a href="{{ item.channel_id }}"> by {{ item.channel_author }} </a>
+                        </p>
+                    </div> <!-- /post-footer -->
+
+                    <b class="vt lt"></b>
+                    <b class="vt rt"></b>
+                    <b class="hz to"></b>
+                    <b class="hz bo"></b>
+                    <b class="cr tl"></b>
+                    <b class="cr tr"></b>
+                    <b class="cr bl"></b>
+                    <b class="cr br"></b>
+
+                </div> <!-- /post -->
+
+            </div> <!-- /entry -->
+        {% endfor %}
+    </div> <!-- /content -->
+
+    <div id="footer">
+        <table style="width:100%;">
+            <tr>
+                <td>
+                    Last Updated on {{ date }}. <br />
+                    Entries on this page are owned by their authors. <br />
+                    We do not edit, endorse or vouch for the contents of individual posts.
+                </td>
+
+                <td style="text-align: right;">
+                    Powered by <a href="http://intertwingly.net/code/venus"> Venus</a>. <br/>
+                    Theme inspired by <a href="http://planet.gnome.org"> Planet Gnome</a>.
+
+                </td>
+            </tr>
+        </table>
+
+    </div> <!-- /footer -->
+
+</div> <!-- /page -->
+
+<!--
+{% debug %}
+-->
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+/* ::::: http://planet.gnome.org/nlayout.css ::::: */
+
+body { margin: 0px; padding: 0px; font-family: sans-serif; background-color: white; color: black; }
+#gnome-sites { list-style: none outside none; background: url('../images/sites-bg.png') repeat-x scroll 0pt 100% rgb(46, 52, 54); text-align: right; padding: 0pt 1ex; margin: 0pt; font-size: 70%; }
+#gnome-sites ul { margin: 0pt; padding: 0pt; }
+#gnome-sites li { display: inline; background: url('../images/sites-sp.png') no-repeat scroll 0pt 0pt transparent; padding-top: 10px; padding-bottom: 8px; margin-left: 0px; margin-top: 0px; }
+#gnome-sites li a { font-weight: bold; color: rgb(255, 255, 255); margin: 0pt 2ex; text-decoration: none; line-height: 30px; }
+#gnome-sites li a:hover { text-decoration: underline; }
+#gnome-sites .home { float: left; background: url('../images/sites-sp.png') no-repeat scroll 100% 0pt transparent; padding-top: 0pt; padding-bottom: 0pt; }
+#gnome-sites .home a { float: left; background: url('../images/sites-foot.png') no-repeat scroll 7px 50% transparent; margin-left: 0pt; padding-left: 27px; }
+#header { position: relative; width: 100%; background-color: rgb(114, 159, 207); }
+#masthead { display: table; border-top: 1px solid rgb(114, 159, 207); }
+#site-logo { vertical-align: middle; display: table-cell; float: left; border: 0pt none; padding: 10px; }
+#site-title { vertical-align: middle; display: table-cell; }
+#site-name { margin: 0pt; }
+#site-name a { font-size: xx-large; font-weight: bold; text-decoration: none; color: black; }
+#site-slogan { font-size: 80%; font-style: italic; margin: 0pt; }
+#footer-link { position: absolute; right: 1em; bottom: 1em; margin: 0pt; font-size: 80%; color: black; text-decoration: none; background: url('../images/help-about.png') no-repeat scroll left center transparent; padding-left: 20px; }
+#footer-link:hover { text-decoration: underline; }
+#search { position: relative; float: right; top: 1em; right: 1em; }
+#search input.form-text, #search input[name="q"] { border: 1px solid rgb(136, 136, 136); padding: 0.5ex; background-position: center center ! important; }
+#content { margin: 0px auto; padding: 0px 1em; max-width: 65em; }
+#feeds { background: url('../images/feeds-bg.png') repeat-x scroll left top rgb(220, 220, 220); padding: 0.5em 0px; }
+#feeds h3 { margin: 0px; padding: 0px 3%; font-size: 100%; }
+#feeds h3 a { background: url('../images/dt-closed.png') no-repeat scroll left top transparent; padding-left: 20px; margin-left: -20px; color: rgb(0, 0, 0); text-decoration: none; }
+#feedlist { display: none; margin: 0.5em 1em; background-color: rgb(238, 238, 238); -moz-border-radius: 1em 1em 1em 1em; padding: 1em; -moz-column-count: 4; -moz-column-gap: 1em; }
+#footer { background: url('../images/footer-bg.png') repeat-x scroll left top black; padding: 3%; font-size: small; color: rgb(204, 204, 204); overflow: hidden; line-height: 150%; }
+#footer a { color: rgb(114, 159, 207); font-weight: bold; text-decoration: none; }
+#footer a:hover { text-decoration: underline; }
+#footer .column { float: left; width: 20%; margin-right: 3%; }
+#footer .section { margin-bottom: 1em; }
+#footer .section h3 { margin: 0pt; font-size: 140%; }
+#footer .section a img { border: 1px solid rgb(204, 204, 204); }
+#footer .section ul { list-style: none outside none; margin-left: 0pt; padding-left: 0pt; }
+#fineprint { display: inline; float: right; text-align: right; width: 25%; }
+#ownership { margin-top: 2em; font-size: 90%; }
+/* ::::: http://planet.gnome.org/planet.css ::::: */
+
+h2.date { color: rgb(119, 119, 119); font-weight: normal; font-size: large; }
+div.entry { clear: both; margin-bottom: 2em; }
+div.person-info { position: relative; z-index: 1; float: left; margin-top: 25px ! important; margin-left: -1em; padding: 0pt 1.5em 0pt 1em; left: 4px; width: 8.5em; background: url('../images/nipple.png') no-repeat scroll right top transparent; text-align: center; }
+div.person-info a { text-decoration: none; color: rgb(119, 119, 119); font-size: small; }
+div.person-info a:hover { color: inherit; }
+div.person-info a img { border: 0px none; margin-bottom: 1ex; }
+div.post { position: relative; margin-left: 10em; padding: 2em; }
+b.cr { position: absolute; background-image: url('../images/corners.png'); width: 50px; height: 50px; }
+b.tl { top: 0px; left: 0px; background-position: left top; }
+b.tr { top: 0px; right: 0px; background-position: right top; }
+b.bl { bottom: 0px; left: 0px; background-position: left bottom; }
+b.br { bottom: 0px; right: 0px; background-position: right bottom; }
+b.vt { position: absolute; background: url('../images/vertical.png') repeat-y scroll 0% 0% transparent; width: 50px; height: 100%; }
+b.lt { top: 0px; left: 0px; background-position: left top; }
+b.rt { top: 0px; right: 0px; background-position: right top; }
+b.hz { position: absolute; background: url('../images/horizontal.png') repeat-x scroll 0% 0% transparent; width: 100%; height: 50px; }
+b.to { top: 0px; left: 0px; background-position: left top; }
+b.bo { bottom: 0px; left: 0px; background-position: left bottom; }
+.post-title { position: relative; z-index: 1; margin-top: 0px; font-size: large; }
+.post-title a { text-decoration: none; }
+.post-title a:hover { text-decoration: underline; }
+.post-contents { position: relative; overflow: auto; z-index: 1; line-height: 140%; }
+.post-contents h2, .post-contents h3, .post-contents h4 { font-size: 100%; font-weight: bold; }
+.post-contents img, .post-contents video { width: auto; max-width: 100%; height: auto; }
+.post-contents a img { border: 0px none; }
+.post-contents blockquote, .post-contents pre { color: rgb(119, 119, 119); margin: auto 1em; padding-left: 1em; border-left: 5px solid rgb(221, 221, 221); }
+.post-contents pre { overflow: auto; }
+.post-contents ul { margin: 0px 0px 0px 1em; padding: 0px; }
+.post-contents ul li { margin: 1em; padding: 0px; list-style-image: url('../images/gnome-16.png'); }
+.post-contents:after { content: ""; display: block; clear: both; }
+.alignleft { float: left; margin-right: 1em; margin-bottom: 1em; }
+.alignright { float: right; margin-left: 1em; margin-bottom: 1em; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.wp-smiley { vertical-align: middle; }
+.wp-caption { border: 1px solid rgb(221, 221, 221); text-align: center; background-color: rgb(243, 243, 243); padding-top: 4px; margin: 10px; -moz-border-radius: 3px 3px 3px 3px; }
+.wp-caption img { margin: 0pt; padding: 0pt; border: 0pt none; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0pt 4px 5px; margin: 0pt; }
+.post-footer { margin-top: 1em; }
+.post-footer p { position: relative; z-index: 1; margin: 0pt; font-size: small; text-align: right; }
+.post-footer p a { text-decoration: none; color: rgb(119, 119, 119); }
+.post-footer p a:hover { text-decoration: underline; color: inherit; }
+/* ::::: http://planet.gnome.org/generic.css ::::: */
+
+a img { border: 0px none; }
+pre { overflow: auto; }
+a { color: rgb(52, 101, 164); text-decoration: none; }
+a:hover { text-decoration: underline; }
+/* ::::: http://blogs.gnome.org/wp-content/mu-plugins/bug-links/bug-links.css ::::: */
+

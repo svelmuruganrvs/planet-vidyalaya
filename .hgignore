@@ -1,0 +1,7 @@
+syntax: glob
+
+*~
+cache
+index.html
+rss20.xml
+atom.xml
