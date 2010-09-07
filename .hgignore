@@ -5,3 +5,5 @@ cache
 index.html
 rss20.xml
 atom.xml
+opml.xml
+google_cse_annotations.xml
