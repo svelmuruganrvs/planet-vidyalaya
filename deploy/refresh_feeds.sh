@@ -5,6 +5,7 @@ cd /var/www/blogs_planet
 
 google docs get --title "Add your Blog" --format "csv" -u "help@rmv.ac.in"
 mv "Add your Blog.csv" subscriptions.csv
+echo "" >> subscriptions.csv
 
 cp $CONFIG $CONFIG.orig
 
