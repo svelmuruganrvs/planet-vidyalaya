@@ -35,6 +35,15 @@
         $(function(){ $('.post img').lazyload({effect : "fadeIn"})
                     });
     </script>
+
+    <script type="text/javascript">
+        function ImgError(source){
+            source.onerror = "";
+            source.src = "media/images/nobody.png";
+            return true;
+        }
+    </script>
+
 </head>
 
 <body>
@@ -89,7 +98,7 @@
                 <div class="person-info">
                     <a href="{{ item.channel_id }}" title="{{ item.channel_author }}">
                         {% if item.channel_avatar %}
-                            <img class="face" src="{{ item.channel_avatar }}" width=70px height=70px alt="">
+                            <img class="face" src="{{ item.channel_avatar }}" width=70px height=70px alt="" onerror="ImgError(this);">
                         {% else %}
                             <img class="face" src="media/images/nobody.png" alt="">
                         {% endif %}
@@ -151,7 +160,8 @@
 
                 <td style="text-align: right;">
                     Powered by <a href="http://intertwingly.net/code/venus"> Planet Venus</a>. <br/>
-                    Theme inspired by <a href="http://planet.gnome.org"> Planet Gnome</a>.
+                    Theme inspired by <a href="http://planet.gnome.org"> Planet Gnome</a>. <br/>
+                    Source available at <a href="http://github.com/vidyalaya/blogs-planet"> GitHub</a>.
 
                 </td>
             </tr>
