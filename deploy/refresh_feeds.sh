@@ -19,9 +19,9 @@ do
     if [ "$accepted" == "Yes" ]
     then
       echo "[$feed]" >> $CONFIG
-      echo "  author = $author" >> $CONFIG
-      echo "  register_number = $register_number" >> $CONFIG
-      echo "  avatar = $avatar" >> $CONFIG
+      echo "author = $author" >> $CONFIG
+      echo "register_number = $register_number" >> $CONFIG
+      echo "avatar = $avatar" >> $CONFIG
     fi
 done
 
