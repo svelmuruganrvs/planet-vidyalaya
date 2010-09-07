@@ -8,7 +8,7 @@ mv "Add your Blog.csv" subscriptions.csv
 
 cp $CONFIG $CONFIG.orig
 
-for line in `tail -n+2 subscriptions.csv`
+while read line
 do
     feed=`echo $line | cut -d, -f4 `
     author=`echo $line | cut -d, -f2`
@@ -23,7 +23,7 @@ do
       echo "register_number = $register_number" >> $CONFIG
       echo "avatar = $avatar" >> $CONFIG
     fi
-done
+done < subscriptions.csv
 
 python /var/www/venus/planet.py $CONFIG
 
