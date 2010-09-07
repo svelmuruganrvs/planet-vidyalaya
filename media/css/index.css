@@ -64,7 +64,7 @@ b.bo { bottom: 0px; left: 0px; background-position: left bottom; }
 .post-contents blockquote, .post-contents pre { color: rgb(119, 119, 119); margin: auto 1em; padding-left: 1em; border-left: 5px solid rgb(221, 221, 221); }
 .post-contents pre { overflow: auto; }
 .post-contents ul { margin: 0px 0px 0px 1em; padding: 0px; }
-.post-contents ul li { margin: 1em; padding: 0px; list-style-image: url('../images/gnome-16.png'); }
+.post-contents ul li { margin: 1em; padding: 0px; }
 .post-contents:after { content: ""; display: block; clear: both; }
 .alignleft { float: left; margin-right: 1em; margin-bottom: 1em; }
 .alignright { float: right; margin-left: 1em; margin-bottom: 1em; }
