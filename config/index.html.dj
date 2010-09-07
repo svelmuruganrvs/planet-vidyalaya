@@ -30,12 +30,10 @@
 
         <!-- Google CSE Search Box Begins -->
         <div id="search">
-            <form id="searchbox_007525575524326405779:c0gv0y410u0"
+            <form id="searchbox_011122397864519733107:tmkb6xgztli"
                   action="http://www.google.com/cse">
-            <input name="cx" value="007525575524326405779:c0gv0y410u0" type="hidden">
-            <input style="background: url(&quot;http://www.google.com/cse/intl/en/images/google_custom_search_watermark.gif&quot;)
-            no-repeat scroll left center rgb(255, 255, 255);" name="q" size="15"
-            type="text">
+            <input name="cx" value="011122397864519733107:tmkb6xgztli" type="hidden">
+            <input name="q" size="15" type="text">
         </div> <!-- /search -->
         <!-- Google CSE Search Box Ends -->
 
@@ -53,7 +51,7 @@
                 </p>
             </div> <!-- /site-title -->
 
-            <a id="footer-link" href="http://link-to-google-form.com">Add your Blog to this planet</a>
+            <a id="footer-link" href="https://spreadsheets.google.com/a/rmv.ac.in/viewform?formkey=dHVENUx6TU1fUzhHYzRlQ3cyMkN3c0E6MQ">Add your Blog to this planet</a>
         </div> <!-- /masthead -->
 
     </div> <!-- /header -->
