@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<opml version="1.1">
+  <head>
+    <title>Vidyalaya Blogs</title>
+    <dateModified>Tue, 07 Sep 2010 06:15:07 GMT</dateModified>
+    <ownerName>Ramakrishna Mission Vidyalaya</ownerName>
+    <ownerEmail>info@rmv.ac.in</ownerEmail>
+  </head>
+  <body>
+    <outline type="rss" text="" title="My Thoughts" xmlUrl="http://dmurthy.posterous.com/rss.xml" htmlUrl="http://dmurthy.posterous.com"/>
+    <outline type="rss" text="" title="Recent Updates to Vidyalaya website" xmlUrl="http://rmv.ac.in/recent_updates/feed" htmlUrl="http://rmv.ac.in/recent_updates"/>
+  </body>
+</opml>
