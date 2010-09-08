@@ -1,0 +1,83 @@
+{% extends "base.html.dj" %}
+
+{% block page_content %}
+
+    <h1> List of Students in this Planet </h1>
+
+    {% for channel in Channels|dictsortreversed:"last_updated_iso" %}
+
+        <div class="entry">
+
+            <div class="person-info">
+                <a href="{{ channel.id }}" title="{{ channel.author }}">
+                    {% if channel.avatar %}
+                        <img class="face" src="{{ channel.avatar }}" width=70px height=70px alt="" onerror="ImgError(this);">
+                    {% else %}
+                        <img class="face" src="media/images/nobody.png" alt="">
+                    {% endif %}
+                    <br/>
+                    {{ channel.author }}
+                </a>
+            </div>
+
+            <div class="post">
+
+                <div class="post-contents ">
+                    <table style="width:60%">
+                        <tr>
+                            <td> Name </td>
+                            <td> {{ channel.author }} </td>
+                        </tr>
+
+                        <tr>
+                            <td> Register Number </td>
+                            <td> {{ channel.register_number }} </td>
+                        </tr>
+
+                        <tr>
+                            <td> Blog </td>
+                            <td> <a href="{{ channel.id }}"> {{ channel.id }} </a> </td>
+                        </tr>
+
+                        <tr>
+                            <td> Blog Name </td>
+                            <td> {{ channel.name }} </td>
+                        </tr>
+                    </table>
+
+                    <br/>
+                    <h2> Recent Blog Posts by {{ channel.author }} </h2>
+                    {% regroup Items|dictsort:"channel_id" by channel_id as item_list %}
+
+                    {% for items in item_list %}
+                        {% if items.grouper == channel.id %}
+                            <ul>
+                            {% for item in items.list|dictsortreversed:"updated_iso" %}
+                                {% if forloop.counter <= 5 %}
+                                    <li> <a href="{{ item.link }}"> {{ item.title }} </a> - {{ item.date }}
+                                    </li>
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                        {% endif %}
+                    {% endfor %}
+
+                </div> <!-- /post-contents -->
+
+
+                <b class="vt lt"></b>
+                <b class="vt rt"></b>
+                <b class="hz to"></b>
+                <b class="hz bo"></b>
+                <b class="cr tl"></b>
+                <b class="cr tr"></b>
+                <b class="cr bl"></b>
+                <b class="cr br"></b>
+
+            </div> <!-- /post -->
+
+        </div> <!-- /entry -->
+
+    {% endfor %}
+
+{% endblock %}
