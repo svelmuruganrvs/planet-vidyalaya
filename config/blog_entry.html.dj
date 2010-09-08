@@ -1,0 +1,58 @@
+
+{% ifchanged item.date %}
+    <h2 class="date"> {{ item.date }} </h2>
+{% endifchanged %}
+
+<div class="entry">
+
+    <div class="person-info">
+        <a href="{{ item.channel_id }}" title="{{ item.channel_author }}">
+            {% if item.channel_avatar %}
+                <img class="face" src="{{ item.channel_avatar }}" width=70px height=70px alt="" onerror="ImgError(this);">
+            {% else %}
+                <img class="face" src="media/images/nobody.png" alt="">
+            {% endif %}
+            <br>
+            {{ item.channel_author }} ({{ item.channel_register_number }})
+        </a>
+    </div>
+
+    <div class="post">
+
+        <div class="post-header">
+            <h3 class="post-title">
+                <a href="{{ item.link }}">
+                    {% if item.title %}
+                        {{ item.title }}
+                    {% else %}
+                        No Title
+                    {% endif %}
+                </a>
+            </h3>
+        </div> <!-- /post-header -->
+
+        <div class="post-contents ">
+            {% autoescape off %}
+                {{ item.content }}
+            {% endautoescape %}
+        </div> <!-- /post-contents -->
+
+        <div class="post-footer">
+            <p>
+                <a href="{{ item.link }}"> Published on {{ item.date }} </a>
+                <a href="{{ item.channel_id }}"> by {{ item.channel_author }} </a>
+            </p>
+        </div> <!-- /post-footer -->
+
+        <b class="vt lt"></b>
+        <b class="vt rt"></b>
+        <b class="hz to"></b>
+        <b class="hz bo"></b>
+        <b class="cr tl"></b>
+        <b class="cr tr"></b>
+        <b class="cr bl"></b>
+        <b class="cr br"></b>
+
+    </div> <!-- /post -->
+
+</div> <!-- /entry -->

@@ -2,7 +2,7 @@
 
 {% block page_content %}
 
-    <h1> List of Students in this Planet </h1>
+    <h1> Students contributing to this planet </h1>
 
     {% for channel in Channels|dictsortreversed:"last_updated_iso" %}
 

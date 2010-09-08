@@ -1,0 +1,21 @@
+{% extends "base.html.dj" %}
+
+    {% block page_content %}
+
+        {% for item in Items %}
+            {% if forloop.counter >= begin_item_placeholder and forloop.counter <= end_item_placeholder %}
+
+                {% include "blog_entry.html.dj" %}
+
+            {% endif %}
+        {% endfor %}
+
+        <div class="pagination">
+        {% for item in Items %}
+            {% if forloop.counter <= num_of_pages_placeholder %}
+                <a href="/page{{ forloop.counter }}.html" {%if forloop.counter == page_num_placeholder %} class="current" {% endif %}> {{ forloop.counter }} </a>
+            {% endif %}
+        {% endfor %}
+        </div>
+
+    {% endblock %}

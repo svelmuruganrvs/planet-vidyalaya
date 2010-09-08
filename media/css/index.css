@@ -14,8 +14,6 @@ body { margin: 0px; padding: 0px; font-family: sans-serif; background-color: whi
 #site-name { margin: 0pt; }
 #site-name a { font-size: xx-large; font-weight: bold; text-decoration: none; color: black; }
 #site-slogan { font-size: 80%; font-style: italic; margin: 0pt; }
-#footer-link { position: absolute; right: 1em; bottom: 1em; margin: 0pt; font-size: 80%; color: black; text-decoration: none; background: url('../images/help-about.png') no-repeat scroll left center transparent; padding-left: 20px; }
-#footer-link:hover { text-decoration: underline; }
 #content { margin: 0px auto; padding: 0px 1em; max-width: 65em; }
 #feeds { background: url('../images/feeds-bg.png') repeat-x scroll left top rgb(220, 220, 220); padding: 0.5em 0px; }
 #feeds h3 { margin: 0px; padding: 0px 3%; font-size: 100%; }
@@ -103,3 +101,21 @@ a:hover { text-decoration: underline; }
 .fix {float:none; clear:both; width:0; height:0; margin:0; padding:0; border:0; line-height:0; font-size:0;}
 .f-left {float:left !important;}
 .f-right {float:right !important;}
+
+.pagination {
+    text-align: center;
+    padding: 3em;
+}
+
+.pagination a {
+    text-decoration: none;
+    border: solid 1px #AAE;
+    color: #15B;
+    padding: 20px;
+    margin: 10px;
+}
+
+.pagination .current {
+    background: #26B;
+    color: #fff;
+}

@@ -2,10 +2,5 @@ syntax: glob
 
 *~
 cache
-index.html
-bloggers.html
-rss20.xml
-atom.xml
-opml.xml
-google_cse_annotations.xml
-subscriptions.csv
+*.html
+*.xml
