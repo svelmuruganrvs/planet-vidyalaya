@@ -54,36 +54,56 @@
 
     <div id="header">
 
-        <!-- Google CSE Search Box Begins -->
-        <div id="search">
-            <form action="http://www.google.com/cse" id="cse-search-box">
-              <div>
-                <input type="hidden" name="cx" value="008662121179292618050:-c04vdhk8jg" />
-                <input type="hidden" name="ie" value="UTF-8" />
-                <input type="text" name="q" size="15" />
-                <input type="submit" name="sa" value="Search" />
-              </div>
-            </form>
-            <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
-        </div> <!-- /search -->
-        <!-- Google CSE Search Box Ends -->
+    <table style="width:100%">
+        <tr>
+            <td rowspan="2">
+                <div id="masthead">
+                    <a href="{{ link }}" title="Home" rel="home">
+                        <img src="media/images/logo.png" alt="Home" id="site-logo" height="64" width="64">
+                    </a>
 
-        <div id="masthead">
-            <a href="{{ link }}" title="Home" rel="home">
-                <img src="media/images/logo.png" alt="Home" id="site-logo" height="64" width="64">
-            </a>
+                    <div id="site-title">
+                        <p id="site-name">
+                            <a href="{{ link }}" title="Home" rel="home"> {{ name }} </a>
+                        </p>
+                        <p id="site-slogan">
+                            Blogs by the students and staff of <a href="http://rmv.ac.in" style="color:#000"> Ramakrishna Mission Vidyalaya </a>
+                        </p>
+                    </div> <!-- /site-title -->
+                </div> <!-- /masthead -->
+            </td>
 
-            <div id="site-title">
-                <p id="site-name">
-                    <a href="{{ link }}" title="Home" rel="home"> {{ name }} </a>
-                </p>
-                <p id="site-slogan">
-                    Blogs by the students and staff of <a href="http://rmv.ac.in" style="color:#000"> Ramakrishna Mission Vidyalaya </a>
-                </p>
-            </div> <!-- /site-title -->
-
-            <a id="footer-link" href="https://spreadsheets.google.com/viewform?formkey=dG9RYmZnVzdJMWh3TDNjT2kyd1czbVE6MQ">Add your Blog to this planet</a>
-        </div> <!-- /masthead -->
+            <td>
+                <!-- Google CSE Search Box Begins -->
+                <div id="search">
+                    <form action="http://www.google.com/cse" id="cse-search-box">
+                      <div>
+                        <input type="hidden" name="cx" value="008662121179292618050:-c04vdhk8jg" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <input type="text" name="q" size="15" />
+                        <input type="submit" name="sa" value="Search" />
+                      </div>
+                    </form>
+                    <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+                </div> <!-- /search -->
+                <!-- Google CSE Search Box Ends -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div id="header_links">
+                    <ul class="box f-right">
+                        <li>
+                            <a href="{{ link }}/bloggers.html"><span> {{ Channels|length }} Bloggers </span></a>
+                        </li>
+                        <li>
+                            <a href="https://spreadsheets.google.com/viewform?formkey=dG9RYmZnVzdJMWh3TDNjT2kyd1czbVE6MQ"> <span> Add your Blog </span> </a>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
 
     </div> <!-- /header -->
 
