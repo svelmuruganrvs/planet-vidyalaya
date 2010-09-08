@@ -3,29 +3,12 @@ CONFIG=config/config.ini
 
 cd /var/www/blogs_planet
 
-google docs get --title "Add your Blog" --format "csv" -u "help@rmv.ac.in"
-mv "Add your Blog.csv" subscriptions.csv
-echo "" >> subscriptions.csv
-
 cp $CONFIG $CONFIG.orig
 
-while read line
-do
-    feed=`echo $line | cut -d, -f4 `
-    author=`echo $line | cut -d, -f2`
-    register_number=`echo $line | cut -d, -f3`
-    avatar=`echo $line | cut -d, -f5`
-    accepted=`echo $line | cut -d, -f6`
+# Get List of feeds
+python deploy/fetch_feed_list_from_google_docs.py >> $CONFIG
 
-    if [ "$accepted" == "Yes" ]
-    then
-      echo "[$feed]" >> $CONFIG
-      echo "author = $author" >> $CONFIG
-      echo "register_number = $register_number" >> $CONFIG
-      echo "avatar = $avatar" >> $CONFIG
-    fi
-done < subscriptions.csv
-
+# Run Planet
 python /var/www/venus/planet.py $CONFIG
 
 # Generate annotations file for Google CSE
