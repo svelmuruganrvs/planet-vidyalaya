@@ -14,8 +14,9 @@
     {% endif %}
 
 {% for item in Items %}
+{% if forloop.counter <= 20 %}
 <item>
-    <title>{{ item.channel_name }} {% if item.title %} : {{ item.title_plain }} {% endif %} </title>
+    <title>{{ item.channel_author }} {% if item.title %} : {{ item.title_plain }} {% endif %} </title>
     <guid isPermaLink="{{ item.guid_isPermaLink }}">{{ item.id }}</guid>
     <link>{{ item.link }}</link>
     {% if item.content %}
@@ -34,6 +35,7 @@
         <enclosure url="{{ item.enclosure_href }}" length="{{ item.enclosure_length }}" type="{{ item.enclosure_type }}"/>
     {% endif %}
 </item>
+{% endif %}
 {% endfor %}
 
 </channel>

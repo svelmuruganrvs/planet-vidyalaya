@@ -8,7 +8,6 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="alternate" type="application/atom+xml" title="{{ name }} Atom 1.0" href="{{ link }}/atom.xml">
     <link rel="alternate" type="application/rss+xml" title="{{ name }} RSS 2.0" href="{{ link }}/rss20.xml">
 
     <link rel="stylesheet" href="/media/css/index.css" type="text/css" media="all">
