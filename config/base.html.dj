@@ -93,7 +93,7 @@
                 <div id="header_links">
                     <ul class="box f-right">
                         <li>
-                            <a href="/bloggers.html"><span> {{ Channels|length }} Bloggers </span></a>
+                            <a href="/contributors.html"><span> {{ Channels|length }} Contributors </span></a>
                         </li>
                         <li>
                             <a href="https://spreadsheets.google.com/viewform?formkey=dG9RYmZnVzdJMWh3TDNjT2kyd1czbVE6MQ"> <span> Add your Blog </span> </a>
@@ -118,7 +118,7 @@
         <table style="width:100%;">
             <tr>
                 <td>
-                    Last Updated on {% now "jS F Y H:i" %}. <br />
+                    Last Updated on {% now "jS F Y H:i T" %}. <br />
                     Entries on this page are owned by their authors. <br />
                     We do not edit, endorse or vouch for the contents of individual posts.
                 </td>
