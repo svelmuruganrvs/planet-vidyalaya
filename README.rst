@@ -3,6 +3,8 @@ What is this?
 
 This is a template for `Planet Venus`_ feed aggregator inspired by `Planet Gnome`_.
 
+Currently it is deployed at http://planet.rmv.ac.in.
+
 .. _`Planet Venus`: http://intertwingly.net/code/venus
 .. _`Planet Gnome`: http://planet.gnome.com
 

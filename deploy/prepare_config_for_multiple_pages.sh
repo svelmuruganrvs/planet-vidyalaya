@@ -3,7 +3,7 @@
 
 CONFIG=config/config.ini
 
-cd /var/www/blogs_planet
+cd /var/www/planet_vidyalaya
 
 # Purge existing files
 rm page?.html

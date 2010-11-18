@@ -1,0 +1,26 @@
+Revision 25 	 2010-09-27 	 Change to nginx config 
+Revision 24 	 2010-09-24 	 Aesthetic changes 
+Revision 23 	 2010-09-14 	 Adding Author name to RSS feed and removing Atom as I don't know how to customize it 
+Revision 22 	 2010-09-08 	 Adding mtime to css to invalidate browser cache in case of changes 
+Revision 21 	 2010-09-08 	 Added support for multiple-pages 
+Revision 20 	 2010-09-08 	 Adding Page of list of contributors 
+Revision 19 	 2010-09-08 	 Canges to header 
+Revision 18 	 2010-09-08 	 Lot of cleanup 
+Revision 17 	 2010-09-07 	 Showing default avatar for broken avatars 
+Revision 16 	 2010-09-07 	 Generating Google CSE annotations 
+Revision 15 	 2010-09-07 	 Adding Google Analytics 
+Revision 14 	 2010-09-07 	 Adding newline at the end of subscriptions.xml 
+Revision 13 	 2010-09-07 	 Fix for incorrect loop 
+Revision 12 	 2010-09-07 	 Correction to deploy script 
+Revision 11 	 2010-09-07 	 Ignoring subscriptions.csv:wq 
+Revision 10 	 2010-09-07 	 Change to deploy script 
+Revision 9 	 2010-09-07 	 Changing Google CSE Id 
+Revision 8 	 2010-09-07 	 Removing opml.xml from hg 
+Revision 7 	 2010-09-07 	 Adding opml support for Google CSE 
+Revision 6 	 2010-09-07 	 Removing invalid image ref from css 
+Revision 5 	 2010-09-07 	 Removing template dbug 
+Revision 4 	 2010-09-07 	 Adding script to schedule refresh 
+Revision 3 	 2010-09-07 	 Small Changes 
+Revision 2 	 2010-09-07 	 Added Google Form and Google CSE 
+Revision 1 	 2010-09-07 	 Added nginx conf 
+Revision 0 	 2010-09-06 	 Initial working version 

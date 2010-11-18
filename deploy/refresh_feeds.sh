@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 CONFIG=config/config.ini
 
-cd /var/www/blogs_planet
+cd /var/www/planet_vidyalaya
 
 cp $CONFIG $CONFIG.orig
 
